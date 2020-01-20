@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.jibx.config</groupId>
+    <artifactId>jibx-parent</artifactId>
+    <version>7.1.6-SNAPSHOT</version>
+    <relativePath>../jibx-parent</relativePath>
+  </parent>
+
+  <artifactId>jibx-artifacts-reactor</artifactId>
+  <version>1.3.3-SNAPSHOT</version>
+  
+  <packaging>pom</packaging>
+  <name>jibx-config-web-reactor - Web packaging parent</name>
+  
+  <modules>
+    <module>external</module>
+    <module>artifacts</module>
+  </modules>
+
+  <scm>
+    <url>https://github.com/jibx/artifacts</url>
+    <connection>scm:git:https://github.com/jibx/artifacts</connection>
+    <developerConnection>scm:git:https://github.com/jibx/artifacts</developerConnection>
+  </scm>
+
+</project>
