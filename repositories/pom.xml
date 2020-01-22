@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.jibx.config.repo</groupId>
+        <artifactId>jibx-artifacts-reactor</artifactId>
+        <version>7.1.6-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>jibx-repositories</artifactId>
+
+  <packaging>pom</packaging>
+  <name>jibx-repositories</name>
+
+    <properties>
+        <skipAttach>true</skipAttach>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>filter</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-artifacts</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attach-artifact</goal>
+                        </goals>
+                        <configuration>
+                            <artifacts>
+                                <artifact>
+                                    <file>target/classes/obr/repository/${project.artifactId}-${project.version}.xml</file>
+                                    <type>xml</type>
+                                </artifact>
+                            </artifacts>
+                            <skipAttach>${skipAttach}</skipAttach>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <modules>
+        <module>jibx-repository</module>
+        <module>jibx-maven-plugin-repository</module>
+        <module>jibx-schema-library-repository</module>
+        <module>jibx-external-repository</module>
+        <module>repository</module>
+    </modules>
+</project>

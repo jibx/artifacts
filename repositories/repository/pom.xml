@@ -3,19 +3,19 @@
   <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.jibx.config</groupId>
-        <artifactId>jibx-artifacts-reactor</artifactId>
-        <version>1.3.3-SNAPSHOT</version>
+        <groupId>org.jibx.config.repo</groupId>
+        <artifactId>jibx-repositories</artifactId>
+        <version>7.1.6-SNAPSHOT</version>
     </parent>
 
-  <artifactId>jibx-artifacts</artifactId>
+  <artifactId>repository</artifactId>
 
   <packaging>pom</packaging>
-  <name>jibx-artifacts - scripts etc.</name>
+  <name>jibx main repository</name>
 
-  <properties>
-    <resourceLocation>src/main/resources/org/jibx/res</resourceLocation>
-  </properties>  
+    <properties>
+        <skipAttach>false</skipAttach>
+    </properties>
 
   <build>
         <resources>
@@ -51,9 +51,8 @@
                         <configuration>
                             <artifacts>
                                 <artifact>
-                                    <file>target/classes/obr/repository.xml</file>
+                                    <file>target/classes/obr/repository/repository.xml</file>
                                     <type>xml</type>
-                                    <classifier>repository</classifier>
                                 </artifact>
                             </artifacts>
                         </configuration>

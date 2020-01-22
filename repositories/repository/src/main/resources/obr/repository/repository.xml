@@ -1,0 +1,6 @@
+<repository lastmodified="${timestamp}">
+  <referral depth="10" url="mvn:org.jibx.config.repo/jibx-repository/${jibx-version}/xml"/>
+  <referral depth="10" url="mvn:org.jibx.config.repo/jibx-maven-plugin-repository/${jibx-maven-plugin-version}/xml"/>
+  <referral depth="10" url="mvn:org.jibx.config.repo/jibx-external-repository/${jibx-external-version}/xml"/>
+  <referral depth="10" url="mvn:org.jibx.config.repo/jibx-schema-library-repository/${jibx-schema-library-version}/xml"/>
+</repository>
