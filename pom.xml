@@ -28,6 +28,7 @@
     <url>https://github.com/jibx/artifacts</url>
     <connection>scm:git:https://github.com/jibx/artifacts</connection>
     <developerConnection>scm:git:https://github.com/jibx/artifacts</developerConnection>
+    <tag>jibx-artifacts-reactor-7.1.6</tag>
   </scm>
 
 </project>
