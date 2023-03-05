@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>jibx-maven-plugin-repository</artifactId>
-    <version>1.4.2-SNAPSHOT</version>
+    <version>1.4.2</version>
 
     <name>jibx-maven-plugin-repository</name>
     <description>JiBX plugin repository</description>
