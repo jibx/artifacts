@@ -64,10 +64,10 @@
     </build>
 
     <modules>
-        <!-- module>jibx-repository</module>
-        <module>jibx-maven-plugin-repository</module -->
+        <module>jibx-repository</module>
+        <module>jibx-maven-plugin-repository</module>
         <module>jibx-schema-library-repository</module>
-        <!-- module>jibx-external-repository</module -->
+        <module>jibx-external-repository</module>
         <module>repository</module>
     </modules>
 </project>
