@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.jibx.config</groupId>
     <artifactId>jibx-parent</artifactId>
-    <version>7.1.10</version>
+    <version>7.1.11</version>
     <relativePath>../jibx-parent</relativePath>
   </parent>
 
@@ -29,7 +29,7 @@
     <url>https://github.com/jibx/artifacts</url>
     <connection>scm:git:https://github.com/jibx/artifacts</connection>
     <developerConnection>scm:git:https://github.com/jibx/artifacts</developerConnection>
-    <tag>jibx-artifacts-reactor-7.1.10.3</tag>
+    <tag>jibx-artifacts-reactor-7.1.11</tag>
   </scm>
 
 </project>
