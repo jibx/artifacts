@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>jibx-schema-library-repository</artifactId>
-    <version>1.2.3-SNAPSHOT</version>
+    <version>1.2.3</version>
 
     <name>schema-library-repository</name>
     <description>Schema library repository</description>
@@ -20,4 +20,8 @@
         <skipAttach>false</skipAttach>
     </properties>
 
+
+  <scm>
+    <tag>jibx-artifacts-reactor-7.1.10.3</tag>
+  </scm>
 </project>

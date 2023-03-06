@@ -11,7 +11,7 @@
 
   <groupId>org.jibx.config.repo</groupId>
   <artifactId>jibx-artifacts-reactor</artifactId>
-  <version>7.1.10-SNAPSHOT</version>
+  <version>7.1.10</version>
 
   <packaging>pom</packaging>
   <name>jibx-config-web-reactor - Web packaging parent</name>
