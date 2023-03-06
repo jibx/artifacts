@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>jibx-repository</artifactId>
-    <version>1.4.3-SNAPSHOT</version>
+    <version>1.4.2-SNAPSHOT</version>
 
     <name>jibx-repository</name>
     <description>JiBX core repository</description>
