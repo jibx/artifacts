@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>jibx-schema-library-repository</artifactId>
-    <!--version>1.2.77-SNAPSHOT</version-->
+    <version>1.2.6-SNAPSHOT</version>
 
     <name>schema-library-repository</name>
     <description>Schema library repository</description>
